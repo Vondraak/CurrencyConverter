@@ -1,0 +1,103 @@
+<html>
+
+<style>
+button {
+    background-color: #333333;
+    border: 2px solid #ff4c00;
+    color: #ff4c00;
+    padding: 3px 20px;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+input {
+    background-color: #DDDDDD;
+    border: 2px solid #ff4c00;
+    color: #ff4c00;
+    padding: 2.5px 0px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-color: #555555; /* fallback color if gradients are not supported */
+    border: 1px solid #ff4c00;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #000000;
+    font-size: 14px;
+    color: #ff4c00;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+		background-image: url("WorldMap.jpg");
+        color: white;} 
+</style>
+
+<header></header>
+<body>
+<script src="jquery.js"></script>
+<script src="currencyBuild.js"></script>
+
+<input type="number" min="0" id="AmountToConvert" value="0" >
+
+<select id="CurrencyIn">
+  <option value="USD">Dollars</option>
+  <option value="TST">Zaat</option>
+  <option value="EU">Euros</option>
+  <option value="YEN">Yen</option>
+  <option value="PES">Peso</option>
+  <option value="RUB">Rubles</option>
+  <option value="DNR">Dinar</option>
+  <option value="EGP">Egyptian Pound</option>
+  <option value="SKL">Shekel</option>
+  <option value="RPE">Rupee</option>
+  <option value="BHT">Baht</option>
+</select>
+
+- To -
+
+<select id="CurrencyOut">
+  <option value="USD">Dollars</option>
+  <option value="TST">Zaat</option>
+  <option value="EU">Euros</option>
+  <option value="YEN">Yen</option>
+  <option value="PES">Peso</option>
+  <option value="RUB">Rubles</option>
+  <option value="DNR">Dinar</option>
+  <option value="EGP">Egyptian Pound</option>
+  <option value="SKL">Shekel</option>
+  <option value="RPE">Rupee</option>
+  <option value="BHT">Baht</option>
+</select>
+
+
+<input id="ReturnedAmount" value="Returned here">
+
+<button type="Submit" onclick="convert()">Convert</button>
+
+</body>
+</html>
+
